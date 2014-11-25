@@ -1,0 +1,269 @@
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+hgroup,
+section {
+  display: block;
+}
+
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'open sans',arial;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+ul,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+section.hosting {
+  padding: 1rem;
+}
+
+section.hosting hgroup h1 {
+  color: #005c8b;
+  font-size: 3.4375rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section.hosting hgroup h2 {
+  color: #61757a;
+  font-size: 2.8125rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  text-align: center;
+}
+
+section ul {
+  text-align: center;
+}
+
+section ul li {
+  margin: .8rem;
+}
+
+section ul li a:link,
+section ul li a:visited {
+  color: #61757a;
+}
+
+section ul li a:hover {
+  text-decoration: underline;
+}
+
+section .tabla {
+  text-align: center;
+}
+
+section .tabla article {
+  margin: 2rem 0;
+}
+
+section .tabla article h3 {
+  text-transform: uppercase;
+  color: #28a4de;
+  font-weight: 800;
+  font-size: 2.8125rem;
+}
+
+section .tabla article .circulo {
+  background-color: #28a4de;
+  box-sizing: border-box;
+  border-radius: 50%;
+  height: 14.75rem;
+  padding-top: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 14.75rem;
+}
+
+section .tabla article .circulo p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3.4375rem;
+}
+
+section .tabla article .circulo p.precio span {
+  font-size: 2rem;
+}
+
+section .tabla article .circulo p.precio span.peso {
+  font-size: 1.5rem;
+}
+
+section .tabla article .circulo p.precio span.decimal {
+  position: relative;
+  top: -1.5rem;
+}
+
+section .tabla article .circulo p.duracion {
+  font-weight: 500;
+  font-size: 1.75rem;
+  text-transform: capitalize;
+}
+
+section .tabla article .mensaje {
+  font-size: .875rem;
+  color: #61757a;
+  text-align: center;
+}
+
+section .tabla article table {
+  width: 100%;
+  text-align: left;
+  color: #61757a;
+}
+
+section .tabla article table tr td {
+  padding: .4rem 0;
+}
+
+section .tabla article table tr:nth-child(2n + 2) {
+  font-weight: 700;
+}
+
+section .tabla article .boton {
+  background-color: #28a4de;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+section .tabla article .boton a:link,
+section .tabla article .boton a:visited {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+}
+
+section .tabla article:last-child .circulo,
+section .tabla article:last-child .boton {
+  background-color: #3d2871;
+}
+
+@media screen and (min-width:768px) {
+  ul.medium li {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .tabla.medium {
+    max-width: 31.25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tabla.medium table,
+  .tabla.medium .boton {
+    max-width: 70%;
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  section.large {
+    padding: 0;
+  }
+
+  .tabla.large {
+    max-width: 60rem;
+  }
+
+  .tabla.large article {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    max-width: 24%;
+    box-sizing: border-box;
+    padding: 0 .7rem;
+  }
+
+  .tabla.large article:last-child {
+    border: 0;
+  }
+
+  .tabla.large table,
+  .tabla.large .boton {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tabla.large .boton {
+    position: relative;
+    left: -.4rem;
+  }
+
+  .tabla.large table {
+    border-right: 1px solid #61757a;
+    font-size: 13px;
+  }
+
+  .tabla.large table td:last-child {
+    padding: 0 .7rem 0 0;
+  }
+
+  .tabla.large .circulo {
+    height: 12rem;
+    padding-top: 2.5rem;
+    width: 12rem;
+  }
+}
