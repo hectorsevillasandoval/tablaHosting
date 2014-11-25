@@ -1,0 +1,178 @@
+/***********************************************************
+*
+*    Autor: Héctor Sevilla
+*    Fecha: 24/11/2014
+*    Descripción: Estilo css para tabla de hosting
+*
+************************************************************/
+
+@import 'normalize.styl'
+
+html
+    font-size 16px
+body
+    font-family 'open sans', arial
+    font-weight 400
+    font-size 16px
+a
+    &:link
+    &:visited
+        text-decoration none
+ul
+p
+h1
+h2
+h3
+    margin 0
+    padding 0
+ul
+    list-style none
+rems(pixel)
+    (pixel/16)rem
+alinear()
+    display inline-block
+    vertical-align top
+
+// COLORS
+header1 = #005c8b
+texto = #61757a
+header3 = #28a4de
+morado = #3d2871
+
+// HEADERS
+section
+    &.hosting
+        padding 1rem
+        hgroup
+            h1
+                color header1
+                font-size rems(55)
+                font-weight 400
+                text-transform uppercase
+                text-align center
+            h2
+                color texto
+                font-size rems(45)
+                text-transform capitalize
+                font-weight 400
+                text-align center
+    ul
+        text-align center
+        li
+            margin .8rem
+            a
+                &:link
+                &:visited
+                    color texto
+                &:hover
+                    text-decoration underline
+    .tabla
+        text-align center
+        article
+            margin 2rem 0
+            h3
+                text-transform uppercase
+                color header3
+                font-weight 800
+                font-size rems(45)
+            .circulo
+                background-color header3
+                box-sizing border-box
+                border-radius 50%
+                height rems(236)
+                padding-top 3.5rem
+                margin-left auto
+                margin-right auto
+                width rems(236)
+                p
+                    color white
+                    font-weight 700
+                    font-size rems(55)
+                    &.precio
+                        span
+                            font-size rems(32)
+                            &.peso
+                                font-size rems(24)
+                            &.decimal
+                                position relative
+                                top -1.5rem
+                    &.duracion
+                        font-weight 500
+                        font-size rems(28)
+                        text-transform capitalize
+            .mensaje
+                font-size rems(14)
+                color texto
+                text-align center
+            table
+                width 100%
+                text-align left
+                color texto
+                tr
+                    td
+                        padding .4rem 0
+                    &:nth-child(2n + 2)
+                        font-weight 700
+            .boton
+                background-color header3
+                text-align center
+                padding 1rem 0
+                a
+                    &:link
+                    &:visited
+                        color white
+                        text-transform uppercase
+                        font-size rems(18)
+            &:last-child
+                .circulo
+                .boton
+                    background-color morado
+
+@media screen and (min-width:768px)
+    ul
+        &.medium
+            li
+                alinear()
+    .tabla
+        &.medium
+            max-width rems(500)
+            margin-left auto
+            margin-right auto
+            table
+            .boton
+                max-width 70%
+                margin 1rem auto
+@media screen and (min-width:1000px)
+    section
+        &.large
+            padding 0
+    .tabla
+        &.large
+            max-width rems(960)
+            article
+                alinear()
+                margin 0
+                max-width 24%
+                box-sizing border-box
+                padding 0 .7rem
+                &:last-child
+                    border 0
+            table
+            .boton
+                max-width 100%
+                margin-left 0
+                margin-right 0
+            .boton
+                position relative
+                left -.4rem
+            table
+                border-right 1px solid texto
+                font-size 13px
+                td
+                    &:last-child
+                        padding 0 .7rem 0 0
+            .circulo
+                height 12rem
+                padding-top 2.5rem
+                width 12rem
+        
